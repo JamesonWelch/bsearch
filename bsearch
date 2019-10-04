@@ -1,13 +1,15 @@
-#! /usr/local/bin/python3
-
-# bsearch
+#! /usr/bin/env python3
 
 import sys
 import webbrowser
 
-
 query = sys.argv[-1]
+baseUrl = 'https://www.google.com/search?q={}'.format(query)
 
-engine_address = "https://www.google.com/search?q={}".format(query)
+print('Opening default browser...')
+print('Searching Google for "{}"'.format(query))
 
-webbrowser.open_new(engine_address)
+if __name__ == '__main__':
+    webbrowser.open_new(baseUrl)
+
+
