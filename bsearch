@@ -1,0 +1,13 @@
+#! /usr/local/bin/python3
+
+# bsearch
+
+import sys
+import webbrowser
+
+
+query = sys.argv[-1]
+
+engine_address = "https://www.google.com/search?q={}".format(query)
+
+webbrowser.open_new(engine_address)
