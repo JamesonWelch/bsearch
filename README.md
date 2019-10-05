@@ -11,10 +11,10 @@ Install Instructions:
 
 1) After downloading the file, navigate to where the downloaded file is located and change the modifications:
 
-    $ chmod +x bsearch
+    `$ chmod +x bsearch`
     
 2) Then move the file to a $PATH folder:
 
-    $ mv bsearch /usr/local/bin
+    `$ mv bsearch /usr/local/bin`
     
  
