@@ -18,3 +18,5 @@ Install Instructions:
     `$ mv bsearch /usr/local/bin`
     
  
+Packaging is still being worked on and will be coming soon to make installation easier.
+I hope bsearch helps your workflow!
