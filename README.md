@@ -1,7 +1,9 @@
 # bsearch
 Command Line Interface that opens up a new browser tab and Google searches the argument
 
-This project is Open-source, and all feedback and conrtibtions are welcomed. 
+This project is Open-source, and all feedback and conrtibtions are welcomed. It runs assuming you have Python 3 installed. If not then install it:
+
+`$ apt-get install python3`
 
 Quotes are needed for the entire query:
 
