@@ -7,7 +7,7 @@ This project is Open-source, and all feedback and conrtibtions are welcomed. It 
 
 Quotes are needed for the entire query:
 
-    `$ bsearch 'all the things to search for`
+`$ bsearch 'all the things to search for`
     
 Install Instructions:
 
