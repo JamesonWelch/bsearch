@@ -2,7 +2,6 @@
 
 # bsearch
 
-import sys
 import webbrowser
 import argparse
 
