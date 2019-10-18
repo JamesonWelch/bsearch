@@ -1,15 +1,35 @@
 #! /usr/bin/env python3
 
-import sys
 import webbrowser
+import argparse
 
-query = sys.argv[-1]
-baseUrl = 'https://www.google.com/search?q={}'.format(query)
+parser = argparse.ArgumentParser(description="Visit a URL or perform a Google search in your default browser")
 
-print('Opening default browser...')
-print('Searching Google for "{}"'.format(query))
+group = parser.add_mutually_exclusive_group()
+
+# URL
+parser.add_argument(
+	'-u', '--url', help="Visits the url in the default browser"
+)
+
+# Google
+parser.add_argument(
+	'-g', '--google', help="Displays Googled query in the default browser"
+)
+
+args = parser.parse_args()
+
+def parse():
+	print('Opening default browser...')
+	if args.google:
+		addr = 'https://www.google.com/search?q={}'.format(args.google)
+		print('Searching Google for "{}"'.format(args.google))
+	if args.url:
+		addr = 'https://www.{}'.format(args.url)
+		print('Navigating to "{}"'.format(addr))	
+	webbrowser.open_new(addr)
+
 
 if __name__ == '__main__':
-    webbrowser.open_new(baseUrl)
-
+    parse()
 
